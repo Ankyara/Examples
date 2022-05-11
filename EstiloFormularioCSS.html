@@ -198,6 +198,9 @@
         }
 
 
+        /** 
+        ** ESTILOS FORMULARIOS 
+        **/
         aside#der h1 {
             width: 200px;
             height: 50px;
@@ -208,21 +211,20 @@
             margin-bottom: 5px;
         }
 
-
+        
         aside#der input {
             padding: 10px;
             margin: 5px 0;
             width: 176px;
         }
 
-
+        /** RUTA + ATRIBUTO ENTRE [] **/
         aside#der input[type="text"] {
             background: url(Imagenes/usuario.png);
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; /** para que el background/imagen no se repita --> x defecto se repite **/
             background-position: right;
-            background-size: contain;
+            background-size: contain; /** el background se ajusta al contenedor **/
         }
-
 
         aside#der input[type="password"] {
             background: url(Imagenes/password.png);
@@ -237,6 +239,10 @@
             background: rgba(100, 0, 100, .5);
             border: 0;
         }
+        /** 
+        ** FIN ESTILOS FORMULARIOS
+        **/
+
 
 
         footer {
@@ -256,21 +262,16 @@
 <body>
 
     <!-- Inicia HEADER -->
-
 <header>
-
 	<div id="logo">Logotipo</div>
     <div id="icono1" class="redes">X</div>
     <div id="icono2" class="redes">X</div>
     <div id="icono3" class="redes">X</div>
-    
 </header>
-
 <!-- Cierra HEADER -->
 
 <!-- Inicia Barra de Navegación -->
 <nav>
-
 	<ul>
     	<li class="botones">Botón 1</li>
         <li class="botones">Botón 2</li>
@@ -278,21 +279,16 @@
         <li class="botones">Botón 4</li>
         <li class="botones">Botón 5</li>
     </ul>
-
 </nav>
-
 <!-- Cierra Barra de Navegación -->
 
 <!-- Inicia parte Superior -->
-
 <div id="top">
-
 	<ul>
     	<li>
         	<img src="Imagenes/img01.jpg" width="100">
         	<h1>Lorem Ipsum</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
         </li>
         
         <li>
@@ -307,65 +303,56 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
    </ul>
-    
 </div>
-
 <!-- Cierra parte Superior -->
 
-<!-- Inicia Sección -->
 
+<!-- Inicia Sección -->
 <section>
 	
     <aside id="izq">
-    	
         <ul>
         	<li>Link 1</li>
             <li>Link 2</li>
             <li>Link 3</li>
             <li>Link 4</li>
         </ul>
-    
     </aside>
-    
-    <article>
-    
+
+    <article>    
     	<h1>Lorem Ipsum</h1>
     	<p><img src="Imagenes/foto.jpg" width="250">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet libero in leo suscipit consequat. Vivamus et nunc neque. Proin vel eros nec nisi luctus laoreet sed vitae nulla. Sed non nulla interdum, consequat turpis at, euismod leo. Fusce fringilla convallis viverra. Integer vel lacus id tortor viverra luctus dapibus et nulla. Integer scelerisque neque eget tortor bibendum, non ultricies tellus vehicula. Morbi imperdiet gravida nisl, non congue ante fringilla in. Mauris laoreet accumsan ultrices.</p>
         <br>
         <p>Sed feugiat, magna non sagittis porttitor, massa risus iaculis nisi, id semper ante nisi sed justo. In placerat ipsum in metus consectetur suscipit. Donec ante nibh, pulvinar eu lectus vel, aliquam cursus enim. Proin nibh eros, tincidunt et est quis, elementum ultrices eros. Mauris accumsan ac metus in viverra.Integer fringilla urna eu fringilla blandit. Suspendisse et tellus venenatis, aliquam sapien at, pharetra orci. Etiam elit arcu, aliquam eu turpis bibendum, facilisis dapibus augue. </p>
-    
     </article>
     
-    <aside id="der">
     
+
+<!-- ** FORMULARIOS -->
+
+    <aside id="der">
     	<h1>Ingreso</h1>
         
         <form>
-        
         	<input type="text" placeholder="Usuario">
             <input type="password" placeholder="Contraseña">
-            <input type="submit" value="Enviar">
-        
-        
+            <input type="submit" value="Enviar">        
         </form>
-    
     </aside>
+
+<!-- ** FIN FORMULARIOS -->
     
 </section>
-
 <!-- Cierra Sección -->
 
+
 <!-- Inicia Pie de Página -->
-
 <footer>
-
 	&copy; Todos los derechos reservados.
     <!--http://www.ascii.cl/htmlcodes.htm-->
 </footer>
-
 <!-- Cierra Pie de Página -->
 
 
 </body>
-
 </html>
