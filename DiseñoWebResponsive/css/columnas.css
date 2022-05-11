@@ -1,6 +1,4 @@
-/*=============================================
-GLOBAL
-=============================================*/
+/** ============================================ GLOBAL ============================================= */
 
 *{
 	margin:0px;
@@ -34,7 +32,10 @@ GLOBAL
 	padding:20px;
 }
 
-/*El total de columnas es 12, para saber el tamaño de las otras 11 debemos hacer una regla de 3: n*100 / 12 */
+
+
+/** El total de columnas es 12, para saber el tamaño de las otras 11 debemos hacer una regla de 3: n*100 / 12 **/
+
 .col-12{width:100%;}
 
 .col-11{width:91.66666667%;}

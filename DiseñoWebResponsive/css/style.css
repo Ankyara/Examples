@@ -1,6 +1,4 @@
-/*=============================================
-GLOBAL
-=============================================*/
+/**=============================================GLOBAL============================================**/
 
 *{
 	margin:0px;
@@ -33,9 +31,9 @@ GLOBAL
 	padding:10px;
 }
 
-/*=============================================
-SECCION 1
-=============================================*/
+
+
+/**=============================================SECCION 1============================================**/
 
 header #logo{
 	font-family: 'Kaushan Script', cursive;
@@ -65,9 +63,9 @@ header center#icono3 p{
 	background:red;
 }
 
-/*=============================================
-SECCION 2
-=============================================*/
+
+
+/**=============================================SECCION 2============================================**/
 
 nav ul li{
 	padding:10px;
@@ -90,9 +88,9 @@ nav ul li a:active{
 	background:rgba(255,0,100,1);
 }
 
-/*=============================================
-SECCION 3
-=============================================*/
+
+
+/**=============================================SECCION 3============================================**/
 
 #seccion3 center{
 	padding:20px;
@@ -115,9 +113,9 @@ SECCION 3
 	padding:10px;
 }
 
-/*=============================================
-SECCION 4
-=============================================*/
+
+
+/**=============================================SECCION 4============================================**/
 
 #seccion4 aside ul li{
 	
@@ -126,8 +124,7 @@ SECCION 4
 	margin:2px 10px;
 	list-style:square;
 	list-style-position:inside;
-	list-style-image:url(../img/lista.png);
-
+	list-style-image:url(/DiseñoWebResponsive/img/lista.png)
 }
 
 #seccion4 article h1{
@@ -162,14 +159,14 @@ SECCION 4
 }
 
 #seccion4 aside#der input[type="text"]{
-	background:url(../img/usuario.png);
+	background:url(/DiseñoWebResponsive/img/usuario.png);
 	background-repeat:no-repeat;
 	background-position:right;
 	background-size:contain;
 }
 	
 #seccion4 aside#der input[type="password"]{
-	background:url(../img/password.png);
+	background:url(/DiseñoWebResponsive/img/password.png);
 	background-repeat:no-repeat;
 	background-position:right;
 	background-size:contain;
@@ -180,9 +177,9 @@ SECCION 4
 	border:0;
 }
 
-/*=============================================
-SECCION 5
-=============================================*/
+
+
+/**=============================================SECCION 5============================================**/
 
 footer{
 	padding:20px 10px;
@@ -195,9 +192,9 @@ footer div{
 	color:white;
 }
 
-/*=============================================
-PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
-=============================================*/
+
+
+/**==============PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc==============**/
 
 @media(min-width:1200px){
 
@@ -221,9 +218,9 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 
 }
 
-/*=============================================
-PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
-=============================================*/
+
+
+/**==============PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px====**/
 
 @media(max-width:1199px) and (min-width:992px){
 
@@ -246,9 +243,8 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 10
 	}
 }
 
-/*=============================================
-PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
-=============================================*/
+
+/**==============PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px========================**/
 
 @media(max-width:991px) and (min-width:768px){
 
@@ -272,9 +268,9 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
 	}
 }
 
-/*=============================================
-PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
-=============================================*/
+
+
+/**==============PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px====**/
 
 @media(max-width:767px){
 
@@ -296,7 +292,6 @@ PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o ve
 		width:100%;
 		margin-bottom: 20px;
 	}
-
 }
 
 
