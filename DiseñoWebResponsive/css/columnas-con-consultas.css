@@ -21,8 +21,8 @@
 	margin:auto;
 	width:100%;
 	height: auto;
-	clear:both;
-	display:table;
+	clear:both; /**chequear*/
+	display:table; /**chequear*/
 }
 
 [class*="col-"]{

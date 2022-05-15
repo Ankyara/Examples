@@ -6,7 +6,7 @@
 	list-style: none;
 	text-decoration: none;
 	font-family: sans-serif;
-	box-sizing: border-box; /*Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de la caja html.*/
+	box-sizing: border-box; /** Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de la caja html*/
 }
 
 .contenedor{
@@ -21,7 +21,9 @@
 	margin:auto;
 	width:100%;
 	height: auto;
-	/*Las columnas dentro de una fila están flotando a la izquierda, y por lo tanto se toman fuera del flujo de la página, y otros elementos serán colocados como si no fueran de las columnas. Para evitar esto, vamos a añadir un estilo que despeja el flujo*/
+	/** Las columnas dentro de una fila están flotando a la izquierda, y por lo tanto se toman fuera del flujo de la página, 
+		y otros elementos serán colocados como si no fueran de las columnas. Para evitar esto, vamos a añadir un estilo que 
+		despeja el flujo **/
 	clear:both;
 	display:table;
 }
@@ -35,6 +37,7 @@
 
 
 /** El total de columnas es 12, para saber el tamaño de las otras 11 debemos hacer una regla de 3: n*100 / 12 **/
+/** Bootstrap recomienda usar hasta 8 decimales, los demas los puedo borrar */
 
 .col-12{width:100%;}
 
@@ -61,3 +64,22 @@
 .col-1 {width: 8.33333333%;}
 
 
+/** OTRA FORMA */
+
+/* .col-12{
+	width: 100%;
+	background: "#";
+	border: 1px solid black;
+}
+
+.col-6{
+	float: left;
+	width: 50%;
+	border: 1px solid black;
+}
+
+.col-4{
+	float:left;
+	width: 33.33333333%;
+	border: 1px solid black;
+} */
