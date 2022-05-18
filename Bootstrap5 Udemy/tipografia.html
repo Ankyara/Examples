@@ -4,15 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tipografia</title>
+	<title>Tipografia Bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h1>Encabezado H1 <small class="text-muted">Texto Secundario</small></h1>
-				<h2>Encabezado H2 <small class="text-muted">Texto Secundario</small></h2>
+				<!--* "text-muted" > texto secundario para los encabezados-->
+				<h1>Encabezado H1 <small class="text-muted">Texto Secundario</small></h1> <!-- titulos principales (solo 1 o 2 como max)-->
+				<h2>Encabezado H2 <small class="text-muted">Texto Secundario</small></h2> <!-- subtitulos -->
 				<h3>Encabezado H3 <small class="text-muted">Texto Secundario</small></h3>
 				<h4>Encabezado H4 <small class="text-muted">Texto Secundario</small></h4>
 				<h5>Encabezado H5 <small class="text-muted">Texto Secundario</small></h5>
@@ -20,6 +21,7 @@
 			</div>
 
 			<div class="col">
+				<!--* estilos de encabezados en párrafos-->
 				<p class="h1">Parrafo estilo H1 <small class="text-muted">Texto Secundario</small></p>
 				<p class="h2">Parrafo estilo H2 <small class="text-muted">Texto Secundario</small></p>
 				<p class="h3">Parrafo estilo H3 <small class="text-muted">Texto Secundario</small></p>
@@ -31,6 +33,8 @@
 			<hr>
 
 			<div class="col">
+				<!-- títulos de los banners de la misma página (no publicidad externa) o
+				 	 encabezados de arriba, logotipos, parte principal de un sitio-->
 				<h1 class="display-1">Display 1</h1>
 				<h2 class="display-2">Display 2</h2>
 				<h3 class="display-3">Display 3</h3>
@@ -42,17 +46,19 @@
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut.</p>
 				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut.</p>
+				<!-- lead > tipografia mas light y más grande (se ve diferente al párrafo estándar)-->
 			</div>
 
 			<hr>
 
 			<div class="col">
-				<figure class="text-center">
-					<blockquote class="blockquote">
+				<figure class="text-center"> <!-- figure -->
+					<blockquote class="blockquote"> <!-- blockquote > citas -->
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dolore.</p>
 					</blockquote>
-					<figcaption class="blockquote-footer">
-						Lorem <cite title="Titulo de la fuente">ipsum dolor</cite> sit amet.
+					<figcaption class="blockquote-footer"> <!-- pie de la cita -->
+						Lorem <cite title="Titulo de la fuente">ipsum dolor</cite> sit amet. 
+						<!-- cuando se pasa el cursor por arriba de lo encerrado en <cite>, aparece "titulo de la página" -->
 					</figcaption>
 				</figure>
 			</div>

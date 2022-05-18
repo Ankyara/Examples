@@ -4,34 +4,45 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tipografia 2</title>
+	<title>Tipografia 2  Bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
+
+			<!--* TIPOGRAFIA CON ETIUETAS + BOOTSTRAP -->
 			<div class="col-6">
-				<p>Lorem <mark>ipsum dolor</mark> sit amet.</p>
-				<p><del>Lorem ipsum dolor sit amet.</del></p>
-				<p><s>Lorem ipsum dolor sit amet.</s></p>
-				<p><ins>Lorem ipsum dolor sit amet.</ins></p>
-				<p><u>Lorem ipsum dolor sit amet.</u></p>
-				<p><strong>Lorem ipsum dolor sit amet.</strong></p>
-				<p><em>Lorem ipsum dolor sit amet.</em></p>
+				<p>Lorem <mark>ipsum dolor</mark> sit amet.</p> <!-- subrayado tipo resaltador -->
+				<p><del>Lorem ipsum dolor sit amet.</del></p> <!-- tachado con una linea -->
+				<p><s>Lorem ipsum dolor sit amet.</s></p> <!-- tachado con una linea -->
+				<p><ins>Lorem ipsum dolor sit amet.</ins></p> <!-- subrayado -->
+				<p><u>Lorem ipsum dolor sit amet.</u></p> <!-- subrayado (underline) -->
+				<p><strong>Lorem ipsum dolor sit amet.</strong></p> <!-- en negritas -->
+				<p><em>Lorem ipsum dolor sit amet.</em></p> <!-- italic/cursiva-->
 			</div>
 
-			<div class="col-6">
+
+
+			<!--* TIPOGRAFIA CON CLASES DE BOOTSTRAP -->
+			<!-- FW -> FONT WEIGHT   /  FS -> FONT STYLE -->
+			<div class="col-6"> 
 				<p class="fw-bold">Texto en negritas</p>
 				<p class="fw-normal">Texto normal</p>
 				<p class="fw-light">Texto Light</p>
 				<p class="fst-italic">Texto Italic</p>
 				<p class="fst-normal">Texto con font-style normal</p>
 
+				<!--* PÁRRAFOS -->
 				<p class="text-decoration-underline">Texto subrayado</p>
 				<p class="text-decoration-line-through">Texto tachado</p>
-				<a href="#" class="text-decoration-none">Enlace sin subrayado</a>
+				<a href="#" class="text-decoration-none">Enlace sin subrayado</a> 
+				<!-- x defecto en Bootstrap los enlaces aparecen subrayados -->
 			</div>
 
+
+			<!--* ALINEACIÓN DE TEXTOS -->
 			<div class="col-12">
 				<hr>
 				<p class="text-start">Texto alineado a la izquierda</p>
@@ -49,13 +60,15 @@
 
 			<hr>
 
+			<!--* CLASES BOOTSTRAP FUENTES --> 
 			<div class="col-12">
 				<p class="text-lowercase">Minisculas - Lorem ipsum dolor sit.</p>
 				<p class="text-uppercase">MAYUSCULES - Lorem ipsum dolor sit.</p>
 				<p class="text-capitalize">Letras Capitales - Lorem ipsum dolor sit.</p>
 			</div>
 
-			<div class="col-12">
+			<!--* FONT SIZE se puede utilizar para todos los elementos como párrafos -->
+			<div class="col-12"><!-- Emmet -> p*6{FONT SIZE $}-->
 				<p class="fs-1">Font Size 1</p>
 				<p class="fs-2">Font Size 2</p>
 				<p class="fs-3">Font Size 3</p>
@@ -66,23 +79,31 @@
 
 			<hr>
 
-			<div class="col-6">
-				<p class="text-primary">.text-primary</p>
-				<p class="text-secondary">.text-secondary</p>
-				<p class="text-success">.text-success</p>
-				<p class="text-danger">.text-danger</p>
-				<p class="text-dark">.text-dark</p>
-				<p class="text-body">.text-body</p>
-				<p class="text-muted">.text-muted</p>
+
+			<!--* CLASES BOOTSTRAP TEXTOS (COLORES) -->
+
+			<div class="col-6"> 
+				<p class="text-primary">.text-primary</p> <!-- Texto azul -->
+				<p class="text-secondary">.text-secondary</p> <!-- Texto gris oscuro -->
+				<p class="text-success">.text-success</p> <!-- Texto verde -->
+				<p class="text-danger">.text-danger</p> <!-- Texto rojo -->
+				<p class="text-dark">.text-dark</p> <!-- Texto negro -->
+				<p class="text-body">.text-body</p> <!-- Texto negro normal -->
+				<p class="text-muted">.text-muted</p> <!-- Texto gris claro -->
+				<p class="text-warning">.text-warning</p> <!-- Texto amarillo -->
 			</div>
 
-			<div class="col-6">
-				<p class="text-warning bg-dark">.text-warning</p>
-				<p class="text-info bg-dark">.text-info</p>
-				<p class="text-light bg-dark">.text-light</p>
-				<p class="text-white bg-dark">.text-white</p>
 
-				<p class="text-black-50">.text-black-50</p>
+			<!--* CLASES BOOTSTRAP FONDOS + TEXTOS (COLORES) -->
+			<!-- bg-dark -> fondo negro  /  bg-light -> fondo claro -->
+			<div class="col-6">
+				<p class="text-warning bg-dark">.text-warning</p> <!-- Texto en amarillo -->
+				<p class="text-info bg-dark">.text-info</p> <!-- Texto en azul/celeste -->
+				<p class="text-light bg-dark">.text-light</p> <!-- Texto en blanco -->
+				<p class="text-white bg-dark">.text-white</p> <!-- Texto en blanco -->
+
+				<!-- texto con transparencia del 50% -->
+				<p class="text-black-50">.text-black-50</p> 
 				<p class="text-white-50 bg-dark">.text-black-50</p>
 			</div>
 		</div>
