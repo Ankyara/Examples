@@ -60,10 +60,42 @@
 
 /* -------------------------------------------------------------------------- */
 
-//* && -> Y   / || -> O
+// let ubicacionTorneo=3;
 
-// let edad=65;
-// let genero='M';
+// if (ubicacionTorneo ==1) {
+//   console.log("Medalla de Oro")
+// } else if (ubicacionTorneo == 2) {
+//     console.log("Medalla de Plata");
+//   } else if (ubicacionTorneo == 3){
+//     console.log("Medalla de Bronce");
+//   } else {
+//     console.log("No ha conseguido medalla");
+//   }
+
+
+/* -------------------------------------------------------------------------- */
+
+// let numero = 1;
+
+// if (numero == 1) {
+//   console.log("Uno");
+// } else if (numero == 2) {
+//   console.log("Dos");
+// } else if (numero == 3) {
+//   console.log("Tres");
+// } else if (numero == 4) {
+//   console.log("Cuatro");
+// } else {
+//   console.log("Número incorrecto");
+// }
+
+
+ /* -------------------------------------------------------------------------- */
+ /*                             && -> Y   / || -> O                            */
+ /* -------------------------------------------------------------------------- */
+
+// let edad = prompt("Edad (sólo números)?");
+// let genero = prompt("Género (M/F)?");
 
 // if ((edad >= 60 && genero == 'F') || (edad >= 65 && genero == 'M')){
 //     console.log("Puede jubilarse")
@@ -73,15 +105,170 @@
 //     alert("No puede jubilarse")
 // }
 
+
+/* ---------------------- Operador condicional / ternario --------------------- */
+/* ----------------------    condición ? expr1 : expr2    --------------------- */
+
+
+// let mayor;
+// let num1, num2;
+
+// num1 = 6;
+// num2 = 8;
+
+// console.log("El número mayor es ");
+
+// if (num1 > num2) {
+//   console.log(num1);
+// } else {
+//   console.log(num2);
+// }
+
+// mayor = num1 > num2 ? num1 : num2; //* operador ternario
+
+
+/* --------------------------------- Ejemplo x -------------------------------- */
+
+// let mayor; 
+// let num1, num2;
+
+// num1= 16;
+// num2= 8;
+
+// console.log("El mayor es ");
+
+// if (num1 > num2){
+//   mayor = num1;
+// } else {
+//   mayor = num2;
+// }
+// console.log (mayor);
+
+/* -------------------------------- Ternario x -------------------------------- */
+
+// let mayor; 
+// let num1, num2;
+
+// num1= 16;
+// num2= 8;
+
+// console.log("El mayor es ");
+
+// mayor = num1 > num2 ? num1 : num2; //* operador ternario
+
+// console.log (mayor);
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Switch                                   */
 /* -------------------------------------------------------------------------- */
 
-let mayor;
-console.log("El número mayor es ");
+// let numero=5
 
-let num3 = 25, num4 = 18;
+// switch (numero) {
+//     case 1: console.log("Uno");
+//             break;
+//     case 2: console.log("Dos");
+//             break;
+//     case 3: console.log("Tres");
+//             break;
+//     case 4: console.log("Cuatro");
+//             break;
+//     default: console.log("Número incorrecto");
+// }
 
-if (num3 > num4) {
-  mayor = num3;
-} else {
-  mayor = num4;
-}
+// console.log("Despues del switch")
+
+
+/* -------------------------------------------------------------------------- */
+
+// let day;
+
+// switch (new Date().getDay()) {
+//     case 0:
+//       day = "Domingo";
+//       break;
+//     case 1:
+//       day = "Lunes";
+//       break;
+//     case 2:
+//        day = "Martes";
+//       break;
+//     case 3:
+//       day = "Miércoles";
+//       break;
+//     case 4:
+//       day = "Jueves";
+//       break;
+//     case 5:
+//       day = "Viernes";
+//       break;
+//     case 6:
+//       day = "Sábado";
+//       break;
+//     default: day = "Inexistente"  
+//   }
+  
+// console.log(day);
+
+
+/* -------------------------------------------------------------------------- */
+/*                        WHILE / Estructuras Cíclicas                       */
+/* -------------------------------------------------------------------------- */
+
+// let i = 1;
+
+// console.log("Antes del While");
+
+// while (i <= 10) {
+//   console.log(i);
+//   i = i + 1;
+// }
+
+// console.log("Después del While");
+
+/* -------------------------------------------------------------------------- */
+
+// let i = 1;
+
+// do {
+//   console.log(i);
+//   i = i + 1;
+// } while (i <= 3);
+
+/* -------------------------------------------------------------------------- */
+
+// let i = 0;
+
+// do {
+//   i = i + 1;
+//   console.log(i);
+// } while (i < 3);
+
+/* -------------------------------------------------------------------------- */
+/*                         FOR / Estructuras Cíclicas                         */
+/* -------------------------------------------------------------------------- */
+
+// for (let j=1; j <= 3; j=j+1){
+//   console.log("J" + j);
+// }
+
+/* -------------------------------------------------------------------------- */
+/*                                  Contador                                  */
+/* -------------------------------------------------------------------------- */
+
+let contador = 0;
+
+contador = contador + 1;
+
+contador ++;
+contador --;
+++contador;
+--contador;
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
