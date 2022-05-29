@@ -191,6 +191,7 @@ separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle */
 
 
 //* --------------------------------- WHILE --------------------------------- */
+
 /* Crea un bucle que ejecuta una sentencia especificada mientras cierta 
 condición se evalúe como verdadera. Dicha condición es evaluada antes de 
 ejecutar la sentencia */ 
@@ -228,6 +229,7 @@ ejecutar la sentencia */
 
 
 //* ------------------------------ DO...WHILE ------------------------------- */
+
 /* La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia 
 especificada, hasta que la condición de comprobación se evalúa como falsa. 
 La condición se evalúa después de ejecutar la sentencia, dando como resultado 
@@ -290,6 +292,7 @@ while (condición); */
  
 //* defino una variable "msj", que va a llamr a la función "mensaje" y esta función 
  //* devuelve un valor "Mensaje como devolución de la función"
+
 
 
  /* -------------------------------------------------------------------------- */
@@ -365,7 +368,106 @@ pero al ser opcional, también tiene un valor por default (c=3)
 /* -------------------------------------------------------------------------- */
 /*                              ARRAYS - ARREGLOS                             */
 /* -------------------------------------------------------------------------- */
-//* Objetos de tipo lista
+                /* Objetos de tipo lista --> indíce empieza en 0
+
+//* ------------------ Acceder/leer un elemento del Array ------------------- */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+
+// console.log(nombres[3]);
+// console.log(nombres[5]); // si pongo un indice (n°) fuera del rango -> undefined
+
+// console.log(vegetales[1]);
 
 
+//* --------------------- Modificar elementos del Array --------------------- */
 
+// nombres[0] = "Natalia";
+// vegetales[2] = "cebolla";
+
+// console.log(nombres[0]);
+// console.log(vegetales[2]);
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Propiedades Array                             */
+/* -------------------------------------------------------------------------- */
+
+//* -------------------------------- LENGTH --------------------------------- */
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+
+// console.log(nombres.length); //* cantidad de elementos que tienen una Array
+
+
+//* ---------------------------------- FOR ---------------------------------- */
+//* "for" se utiliza para recorrer Arrays
+/* si quiero recorrer por medio del índice, este siempre va a empezar desde -1
+porque empieza en 0, por eso el "length" arranca desde -1 */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+// for (var i = 0; i <= nombres.length - 1; i++){
+//     console.log(nombres[i]);
+// }
+
+//* ------------------------------ FOR...EACH ------------------------------- */
+//* otro método para recorres Arrays. La diferencia es que en "for...each", 
+//* tengo que utilizar una "function" 
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+
+// vegetales.forEach(function(elemento){
+//     console.log(elemento);
+// })
+
+// vegetales.forEach(function(elemento, indice){
+//     console.log(elemento, indice);
+// })
+
+// chequear donde van los () -> tenerlo en cuenta
+
+
+//* --------------------------- Agregar elementos --------------------------- */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+
+// console.log(nombres);
+// nombres.push("Matias"); //* "push" agrega un elemento al final del array
+// console.log(nombres);
+
+// nombres.unshift("Natalia"); //* "unshift" agrega un elmento al comienzo del array
+// console.log(nombres);
+
+
+//* --------------------------- Quitar elementos ---------------------------- */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+
+// nombres.pop(); //* quita el último elemento
+// console.log(nombres);
+
+// nombres.shift(); 
+// console.log(nombres); //* quita el primer elemento
+
+
+//* ----------------------- Posición dentro del Array ----------------------- */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+
+// var pos = nombres.indexOf("Manuel"); 
+// console.log(pos);
+//* "indexOf" nos indica en que posición del índice esta un elemento
+
+
+// nombres.splice(1, 1); //que me elimine del índice 1, un elemento
+// console.log(nombres);
+// nombres.splice(1, 2); //que me elimine del índice 1, dos elementos
+// console.log(nombres);
+
+//* con "splice" puedo eliminar un elmento que no necesariamente este al inciio
+//* o al final de un array
+
+/* -------------------------------------------------------------------------- */
