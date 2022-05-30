@@ -245,6 +245,7 @@
 //   console.log(i);
 // } while (i < 3);
 
+
 /* -------------------------------------------------------------------------- */
 /*                         FOR / Estructuras Cíclicas                         */
 /* -------------------------------------------------------------------------- */
@@ -253,20 +254,214 @@
 //   console.log("J" + j);
 // }
 
+
 /* -------------------------------------------------------------------------- */
 /*                                  Contador                                  */
 /* -------------------------------------------------------------------------- */
 
-let contador = 0;
+// for (let j=1; j <= 3; j++){
+//     console.log(j);
+//   }
 
-contador = contador + 1;
+// let contador = 0; // 0
 
-contador ++;
-contador --;
-++contador;
---contador;
+// contador = contador + 1; // 1
+
+// contador ++; // 2
+// contador --;
+
+// ++contador;
+// --contador;
+
 
 /* -------------------------------------------------------------------------- */
+/*                                 Acumulador                                 */
+/* -------------------------------------------------------------------------- */
+
+// let totalVentas = 0;
+
+// totalVentas = totalVentas + 30;
+// totalVentas = totalVentas + 56;
+// totalVentas = totalVentas + 10;
+
+// totalVentas += 30;
+// totalVentas += 56;
+// totalVentas += 10;
+
+/* -------------------------------------------------------------------------- */
+
+// let totalSuma = 100;
+// totalSuma -= 30; // 100 - 30
+// totalSuma = totalSuma - 30;  // 70 - 30
+
+/* -------------------------------------------------------------------------- */
+
+// valor = 10;
+
+// valor = valor * 3;
+// valor *= 3;
+
+// valor = valor / 9;
+// valor /= 2;
+
+
+//* ------------------------------------------------------------------------- */
+//*                             Arrays - Arreglos                             */
+//* ------------------------------------------------------------------------- */
+
+// let numeros = [10,2,50,26,78];
+// console.log(numeros[0])
+
+// let nombres = ["Fernando", "Nancy", "Ana", "Oscar"];
+
+// let varios =[1, true, "Juan"]; // puede tener elementos de distinto tipo
+
+// const array = ["a", "b", "c"];
+
+
+/* ------------------------------- Push - Pop ------------------------------- */
+
+// let nombres = ["Fernando", "Nancy", "Ana", "Oscar"];
+
+// nombres.push("Marcela");
+// nombres.push("Pedro", "Paula");
+
+// nombres.pop() // elimina el último elemento que agrege y lo guarda
+
+// let ultimoEliminado = nombres.pop();
+
+
+/* ----------------------------- Unshift - Shift ---------------------------- */
+
+// let nombres = ["Fernando", "Nancy", "Ana", "Oscar", "Marcela"];
+
+// nombres.unshift("Silvina");
+// nombres.shift()
+
+/* --------------------------------- Concat --------------------------------- */
+//* concatena elementos pasados por parámetro
+
+// let array = [1, 2, 3];
+// array = array.concat(4,5,6);
+// array = array.concat([7, 8, 9]);
+
+/* ----------------------------- Slice - Splice ----------------------------- */
+/*devuelve los elementos del array desde la posición ini hasta la posición end, 
+permitiendo crear un nuevo array más pequeño con ese grupo de elementos. 
+Recuerda que las posiciones empiezan a contar desde 0. 
+En el caso de que no se proporcione el parámetro end, se devuelven todos los 
+elementos desde la posición ini hasta el final del array. */
+
+
+// let nombres = ["Fernando", "Nancy", "Ana", "Oscar", "Marcela"];
+
+// let nombresEspeciales = nombres.slice(2,4); //devuelve "Ana" y "Oscar" 
+
+// let nombresEliminados = nombres.splice(2, 2); 
+// toma "Ana" y "Oscar", los elminina del Array original, y los guarda
+
+/* ---------------------------------- Join ---------------------------------- */
+/* Con join() podemos crear un  con todos los elementos del array, separándolo 
+por el texto que le pasemos por parámetro: */
+
+// let nombres = ["Fernando", "Nancy", "Marcela"];
+// nombres.join(" - "); //ponemos directamente en la consola
+
+// nombres = nombres.join(" - "); //para que aparezca el cambio en la consola
+//  //* devuelve una cadena de strings
+
+// ['G', 'a', 'b', 'r', 'i', 'e', 'l'].join("");//ponemos en la consola
+
+// let nombreG = ['G', 'a', 'b', 'r', 'i', 'e', 'l'].join("");
+
+
+ /* ---------------------------------- Split --------------------------------- */
+ // Con split() es posible crear un  a partir de un string
+
+//  let probando = "5.4.3.2.1".split(".");
+//  let probando2 = "Gabriel".split("");
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   OBJETOS                                  */
+/* -------------------------------------------------------------------------- */
+//* objetos -> {} / propiedad : valor
+
+let persona1 = {
+    nombre: "Manuel",
+    apellido: "Alen",
+    edad: 35,
+    correo: "manuel.alen@gmail.com",
+}
+
+let persona2 = {
+    nombre: "Romina",
+    apellido: "Doval",
+    edad: 40,
+    correo: "romina.doval@gmail.com",
+}
+
+let producto1 = {
+    id: 4,
+    nombre: "Peine",
+    precio: 600
+}
+
+/* -------------------------------------------------------------------------- */
+let personas = [
+    {legajo: 1, nombre: "Natalia", apellido: "Perez"},
+    {legajo: 2, nombre: "Matias", apellido: "Ramirez"},
+    {legajo: 3, nombre: "Delia", apellido: "Lopez"},
+]
+
+/* consola 
+
+personas
+personas[0]
+personas[2]
+*/
+
+ /* -------------------------------------------------------------------------- */
+
+ let persona4 = {
+    nombre: "Ana",
+    apellido: "Salcedo",
+    edad: 35,
+    correo: "ana.salcedo@gmail.com",
+    //hobbie: "tenis"
+    hobbies: ["tenis", "ajedrez", "guitarra"],
+
+    mascota: {
+        nombre: "Junior",
+        tipoMascota: "Perro",
+        raza: "Caniche"
+    }
+}
+
+/* consola
+
+persona4
+persona4.hobbie
+persona4.hobbies
+persona4.mascota
+*/
+
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
