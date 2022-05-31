@@ -1,3 +1,5 @@
+//console.clear(); // para limpiar consola
+
 // //* --------------------- Variables --> var / const / let -------------------- *//
 
 // /* -------------------------------------------------------------------------- */
@@ -808,7 +810,7 @@ persona4.mascota
 /*const -> valor fijo (no lo puedo cambiar)
 para "arrays" conviene usar "const" (chequear)*/
 
-const words = ["pelo", "caratula", "pensamiento", "red", "paralelo", "sol"];
+// const words = ["pelo", "caratula", "pensamiento", "red", "paralelo", "sol"];
 
 /* consola
 words
@@ -818,20 +820,27 @@ words = "palabra"
        no se puede convertir en otro tipo
 */
 
-const palabraGrande = (word) => {
-    return word.length > 5
-};
+// const palabraGrande = (word) => {
+//     return word.length > 5
+// };
 
 // consola -> palabraGrande("Hola") / palabraGrande("Periodista")
 
 
-const bigWords = words.filter(palabraGrande);
+// const bigWords = words.filter(palabraGrande);
 // va a generar un nuevo array solo con las palabras "length > 5"
 
 // consola -> (3) ['caratula', 'pensamiento', 'paralelo']
 
 
+/* -------------------------------------------------------------------------- */
+/*                                   VARIOS                                   */
+/* -------------------------------------------------------------------------- */
+//* Árbol -> estructura jerárquica documento
 
+//* Consola 
+// window.document // muestra el ducumento HTML 
+// window.document.body
 
 
 
