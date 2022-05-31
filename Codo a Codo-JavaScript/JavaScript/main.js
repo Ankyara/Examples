@@ -15,7 +15,8 @@
 // //* Concatenar
 // console.log("Mi nombre es " + nombre + " y mi apellido es " + apellido);
 
-// console.log(`Mi nombre es ${nombre} y mi apellido es ${apellido}`);
+// console.log(`Mi nombre es ${nombre} y mi apellido es ${apellido}`); 
+//* Templates strings
 
 // /* -------------------------------------------------------------------------- */
 // /*                                   Números                                  */
@@ -29,6 +30,20 @@
 
 // //* Aparece en el documento (página web)
 // document.write("La suma de numero1 y numero2 es" + " " + suma)
+
+/* -------------------------------- parseInt -------------------------------- */
+
+// let numero3 = "16";
+// console.log(numero2 + parseInt(numero3)); //* convierte un string en n° entero
+
+/* -------------------------------------------------------------------------- */
+
+// console.log("La suma de 5 + 4 = " + (5 + 4));
+
+// console.log(`La suma de numero1 + numero2 = ${numero1+numero2}`);
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                     Sentencias Condicionales - If/Else                     */
@@ -72,23 +87,45 @@
 //     console.log("No ha conseguido medalla");
 //   }
 
+/* --------------------------------- Ejemplo x -------------------------------- */
 
-/* -------------------------------------------------------------------------- */
+// let mayor; 
+// let num1, num2;
 
-// let numero = 1;
+// num1= 16;
+// num2= 8;
 
-// if (numero == 1) {
-//   console.log("Uno");
-// } else if (numero == 2) {
-//   console.log("Dos");
-// } else if (numero == 3) {
-//   console.log("Tres");
-// } else if (numero == 4) {
-//   console.log("Cuatro");
+// console.log("El mayor es ");
+
+// if (num1 > num2){
+//   mayor = num1;
 // } else {
-//   console.log("Número incorrecto");
+//   mayor = num2;
 // }
+// console.log (mayor);
 
+/* -------------------------------- Ejemploxx ------------------------------- */
+// En el próximo ejemplo suponemos que los 2 números son distintos, no iguales
+
+// let mayor;
+
+// console.log("El número mayor es ");
+
+// let num3 = 25, num4 = 18;
+
+// if(num3 > num4) {
+//     mayor = num3;
+// } else {
+//     mayor = num4;
+// };
+
+/* ---------------------------- Operador ternario --------------------------- */
+
+// mayor = num3 > num4 ? num3 : num4;
+
+// console.log(num3 > num4 ? num3 : num4)
+
+// console.log(mayor);  
 
  /* -------------------------------------------------------------------------- */
  /*                             && -> Y   / || -> O                            */
@@ -127,23 +164,6 @@
 // mayor = num1 > num2 ? num1 : num2; //* operador ternario
 
 
-/* --------------------------------- Ejemplo x -------------------------------- */
-
-// let mayor; 
-// let num1, num2;
-
-// num1= 16;
-// num2= 8;
-
-// console.log("El mayor es ");
-
-// if (num1 > num2){
-//   mayor = num1;
-// } else {
-//   mayor = num2;
-// }
-// console.log (mayor);
-
 /* -------------------------------- Ternario x -------------------------------- */
 
 // let mayor; 
@@ -163,6 +183,23 @@
 /*                                   Switch                                   */
 /* -------------------------------------------------------------------------- */
 
+//* Forma 1
+// let numero = 1;
+
+// if (numero == 1) {
+//   console.log("Uno");
+// } else if (numero == 2) {
+//   console.log("Dos");
+// } else if (numero == 3) {
+//   console.log("Tres");
+// } else if (numero == 4) {
+//   console.log("Cuatro");
+// } else {
+//   console.log("Número incorrecto");
+// }
+
+
+//* Forma 2 (lo anterior se puede hacer de esta forma (con switch))
 // let numero=5
 
 // switch (numero) {
@@ -211,9 +248,22 @@
   
 // console.log(day);
 
+// consola new Date() -> nos muestra dia, fecha y hora de el día que estemos
+
 
 /* -------------------------------------------------------------------------- */
 /*                        WHILE / Estructuras Cíclicas                       */
+/* -------------------------------------------------------------------------- */
+
+// let indice = 10;
+
+// while (indice >= 1){
+//     console.log(indice);
+//     indice = indice - 1; // Contador
+// }
+
+// console.log("Valor del indice al final: " + indice);
+
 /* -------------------------------------------------------------------------- */
 
 // let i = 1;
@@ -237,7 +287,6 @@
 // } while (i <= 3);
 
 /* -------------------------------------------------------------------------- */
-
 // let i = 0;
 
 // do {
@@ -245,23 +294,51 @@
 //   console.log(i);
 // } while (i < 3);
 
+/* -------------------------------------------------------------------------- */
+// i = 1;
+
+// do{
+//     console.log(i)
+//     i = i + 1;
+// } while(i <= 4)
+// va a ejecutarlo tantas veces mientras la condicion sea verdadera (i<=4)
 
 /* -------------------------------------------------------------------------- */
 /*                         FOR / Estructuras Cíclicas                         */
 /* -------------------------------------------------------------------------- */
 
+// let i;
+
+// for( i=1; i <= 10; i++){
+//     console.log(i);
+// }
+
+/* -------------------------------------------------------------------------- */
+// for( i=10; i >= 1; i = i - 1){
+//     console.log(i);
+// }
+
+// /* -------------------------------------------------------------------------- */
+// for( i=2; i <= 10; i+=2){
+//         console.log(i);
+//     }
+
+/* -------------------------------------------------------------------------- */
 // for (let j=1; j <= 3; j=j+1){
 //   console.log("J" + j);
 // }
 
-
 /* -------------------------------------------------------------------------- */
 /*                                  Contador                                  */
 /* -------------------------------------------------------------------------- */
+//es aquella variable que se incrementa de 1 en 1
+
 
 // for (let j=1; j <= 3; j++){
 //     console.log(j);
 //   }
+
+/* --------------- Primero lo imprime y despues lo suma/resta --------------- */
 
 // let contador = 0; // 0
 
@@ -270,6 +347,7 @@
 // contador ++; // 2
 // contador --;
 
+/* --------------- Primero lo suma/resta y después lo imprime --------------- */
 // ++contador;
 // --contador;
 
@@ -290,9 +368,27 @@
 
 /* -------------------------------------------------------------------------- */
 
+// let totVentas = 0;
+
+// totVentas = totVentas + 78000;
+
+// totVentas = totVentas + 102000;
+
+// totVentas = totVentas + 53000;
+
+// totVentas += 78000;
+// totVentas += 102000;
+// totVentas += 53000;
+
+/* -------------------------------------------------------------------------- */
+
 // let totalSuma = 100;
 // totalSuma -= 30; // 100 - 30
 // totalSuma = totalSuma - 30;  // 70 - 30
+
+// let valor = 100;
+// valor = valor - 10;
+// valor -= 10;
 
 /* -------------------------------------------------------------------------- */
 
@@ -381,6 +477,22 @@ por el texto que le pasemos por parámetro: */
 //  let probando = "5.4.3.2.1".split(".");
 //  let probando2 = "Gabriel".split("");
 
+/* ------------------------- Desestructurar un array ------------------------ */
+// separar un arreglo en variables separadas
+
+// let amigos = ["Juan", "Pedro", "Maria"];
+
+// let [amigo1, amigo2, amigo3] = amigos;
+
+/* -------------------------------------------------------------------------- */
+
+// let person = {
+//     nombre: "Pedro",
+//     apellido: "Saldivar"
+// };
+
+// let {nombre, apellido} = person;
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -388,32 +500,32 @@ por el texto que le pasemos por parámetro: */
 /* -------------------------------------------------------------------------- */
 //* objetos -> {} / propiedad : valor
 
-let persona1 = {
-    nombre: "Manuel",
-    apellido: "Alen",
-    edad: 35,
-    correo: "manuel.alen@gmail.com",
-}
+// let persona1 = {
+//     nombre: "Manuel",
+//     apellido: "Alen",
+//     edad: 35,
+//     correo: "manuel.alen@gmail.com",
+// }
 
-let persona2 = {
-    nombre: "Romina",
-    apellido: "Doval",
-    edad: 40,
-    correo: "romina.doval@gmail.com",
-}
+// let persona2 = {
+//     nombre: "Romina",
+//     apellido: "Doval",
+//     edad: 40,
+//     correo: "romina.doval@gmail.com",
+// }
 
-let producto1 = {
-    id: 4,
-    nombre: "Peine",
-    precio: 600
-}
+// let producto1 = {
+//     id: 4,
+//     nombre: "Peine",
+//     precio: 600
+// }
 
 /* -------------------------------------------------------------------------- */
-let personas = [
-    {legajo: 1, nombre: "Natalia", apellido: "Perez"},
-    {legajo: 2, nombre: "Matias", apellido: "Ramirez"},
-    {legajo: 3, nombre: "Delia", apellido: "Lopez"},
-]
+// let personas = [
+//     {legajo: 1, nombre: "Natalia", apellido: "Perez"},
+//     {legajo: 2, nombre: "Matias", apellido: "Ramirez"},
+//     {legajo: 3, nombre: "Delia", apellido: "Lopez"},
+// ]
 
 /* consola 
 
@@ -513,9 +625,9 @@ persona4.mascota
 
 /* -------------------------------------------------------------------------- */
 
-function saludar (nombre) {
-    return "Hola " + nombre;
-}
+// function saludar (nombre) {
+//     return "Hola " + nombre;
+// }
 
 // consola -> saludar("Romina")
 
@@ -582,6 +694,7 @@ function saludar (nombre) {
 // }
 
 //* ------------------------------------------------------------------------- */
+//* la funcion puede recibir un valor declarado afuera
 
 // let num3 = 9;
 
@@ -589,19 +702,26 @@ function saludar (nombre) {
 //     return(num1+num2+num3);
 // }
 
+
 /* -------------------------------------------------------------------------- */
 /*                             AREGLOS Y FUNCIONES                            */
 /* -------------------------------------------------------------------------- */
 //* las funciones a veces forman parte de una array
+//* se puede crear un array basado en otro, que tiene un método/function
 
 // let numeros = [10, 45, 16, 13];
 
 // let doble = numero => numero * 2;
+// let triple = numero => numero * 3;
 
-// let dobles = numeros.map(numero => numero * 2); //callback
-// let dobles1 = numeros.map(doble); // callback
-// crea un nuevo array con igual cantidad de elementos (pero cuyos valores son dobles)
+//callback / 2 formas de poner lo mismo
+// let dobles = numeros.map(numero => numero * 2); 
+// let dobles1 = numeros.map(doble); 
+//* crea un nuevo array con igual cantidad de elementos (pero cuyos valores son dobles)
 
+// consola
+// numeros.map(numero => numero * 2); 
+// numeros.map(numero => numero * 3); 
 
 /* -------------------------------------------------------------------------- */
 /*                   Recorrer un arreglo con un ciclo (for)                   */
@@ -636,7 +756,8 @@ function saludar (nombre) {
 // }
 
  //* ------------------------- Ejemplo de For...each ------------------------- */
- 
+ //* no genera array nuevo
+
 // let nombres = ["Raul","Pedro","Juana"];
 
 // nombres.forEach(element => {
@@ -660,29 +781,54 @@ function saludar (nombre) {
 
 /* -------------------------------------------------------------------------- */
 
-function caminar(){
-    return("Caminando");
-}
-console.log(caminar()) // Ejecución de la function (lo que devuelve la funcion)
+// function caminar(){
+//     return("Caminando");
+// }
+// console.log(caminar()) // Ejecución de la function (lo que devuelve la funcion)
 
 
-function dormir(){
-    return("Durmiendo");
-}
+// function dormir(){
+//     return("Durmiendo");
+// }
 
 
 //* una function puede recibir otra función como parámetro y la puede ejecutar adentro
 //* callback?
 
-function accion(funcion){
-    return funcion();
-}
-// consola accion(caminar);
+// function accion(funcion){
+//     return funcion();
+// }
 
-console.log(accion(caminar)); // Funcion
+//consola -> accion(caminar);
 
-/* -------------------------------------------------------------------------- */
+// console.log(accion(caminar)); // Funcion
 
+
+//* --------------------------------- CONST --------------------------------- */
+/*const -> valor fijo (no lo puedo cambiar)
+para "arrays" conviene usar "const" (chequear)*/
+
+const words = ["pelo", "caratula", "pensamiento", "red", "paralelo", "sol"];
+
+/* consola
+words
+words [0] = "tela"; // agrega "tela" a la lista
+words = "palabra" 
+    -> no puedo cambiar la estructura (permanece constante) 
+       no se puede convertir en otro tipo
+*/
+
+const palabraGrande = (word) => {
+    return word.length > 5
+};
+
+// consola -> palabraGrande("Hola") / palabraGrande("Periodista")
+
+
+const bigWords = words.filter(palabraGrande);
+// va a generar un nuevo array solo con las palabras "length > 5"
+
+// consola -> (3) ['caratula', 'pensamiento', 'paralelo']
 
 
 
