@@ -1,6 +1,6 @@
-// /* -------------------------------------------------------------------------- */
-// /*                    Variables y tipos de datos  - Typeof                    */
-// /* -------------------------------------------------------------------------- */
+// //* ------------------------------------------------------------------------- */
+// //*                   Variables y tipos de datos  - Typeof                    */
+// //* ------------------------------------------------------------------------- */
 
 // //* STRING
 // var nombre = "Romina";
@@ -31,9 +31,9 @@
 // console.log(puestoDeTrabajo);
 
 
-// /* -------------------------------------------------------------------------- */
-// /*                    OPERADORES MATEMÁTICOS  +  -  *  /  %                   */
-// /* -------------------------------------------------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                   OPERADORES MATEMÁTICOS  +  -  *  /  %                   */
+//* ------------------------------------------------------------------------- */
 
 // var edadAna, edadMaria, diferenciaEdad;
 // var sumaEdades, yearAna, yearMaria, yearActual;
@@ -56,11 +56,29 @@
 // console.log(yearActual / 2);
 
 
-// /* -------------------------------------------------------------------------- */
-// /*                 OPERADORES LÓGICOS, UNARIOS Y DE ASIGNACIÓN                */
-// /* -------------------------------------------------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*        OPERADORES DE COMPARACIÓN, LÓGICOS, UNARIOS Y DE ASIGNACIÓN        */
+//* ------------------------------------------------------------------------- */
 
-// //* ------------------------- Lógicos < > <= >= == ! ------------------------ */
+/* -------------------------------------------------------------------------- */
+/*                          Operadores de comparación                         */
+/* -------------------------------------------------------------------------- */
+
+/*
+==   Igual
+===  Estrictamente igual
+
+!=   Desigualdad (negación)
+!==  Desigualdad estricta
+
+x > y  Mayor que
+x < y  Menor que
+
+>=  Mayor o igual que
+<=  Menor o igual que
+*/
+
+/* -------------------------------------------------------------------------- */
 
 // var edadAna, edadMaria, diferenciaEdad;
 // edadAna = 34;
@@ -72,7 +90,69 @@
 // var mayorAna = !(edadAna == edadMaria);
 // console.log(mayorAna);
 
-// //* ------------------- Unarios, ++Incremento, --Decremento ----------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                             Operadores lógicos                             */
+/* -------------------------------------------------------------------------- */
+
+//  &&  Operador AND
+//  ||  Operador OR
+//  !   Negación o NOT
+// ??  Operador nulish coalescing  / fusión de nulos o unión nulosa
+
+/* -------------------------------------------------------------------------- */
+// console.log(true && true)
+// console.log(true && false)
+// console.log(false && true)
+// console.log(false && false)
+
+/* -------------------------------------------------------------------------- */
+
+// let edad=28;
+
+// console.log(edad > 18 && edad < 30);
+// console.log(edad > 18 && edad < 25);
+
+// console.log(10 && 0); // retorna valor false -> 0
+// console.log(10 && 20); // retorna valor true -> 20
+// console.log(20 && 10);  // retorna valor true -> 10
+// console.log(20 && 5 && false); // retorna false
+
+//* retorna el primer valor false, sino encuentra retorna true
+//* cuando no encuentra false...retorna el primer valor true
+//* casos especiales -> retorna el primer false o el último true
+
+
+/* -------------------------------------------------------------------------- */
+//* si al menos 1 condición es true...retorna true
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+
+// let edad=20;
+
+// // console.log( edad < asdasd || edad > 18); // error forzado
+// console.log(edad > 18 || edad < 25);
+
+// console.log(20 || 10);
+// console.log(20 || 5 || false);
+
+/* -------------------------------------------------------------------------- */
+
+// console.log(10>15);
+// console.log(!(10>15));
+
+/* -------------------------------------------------------------------------- */
+
+// console.log("" ?? "Hola"); // para ver si un dato es especifícamente falso
+// console.log(false ?? "Hola")
+// chequear
+
+
+ /* -------------------------------------------------------------------------- */
+ /*                     Unarios, ++Incremento, --Decremento                    */
+ /* -------------------------------------------------------------------------- */
 
 // //edadAna++;
 // console.log(edadAna++);
@@ -91,11 +171,13 @@
 // console.log(a);
 
 
-// /* -------------------------------------------------------------------------- */
-// /*                     SENTENCIAS Y ESTRUCTURAS DE CONTROL                    */
-// /* -------------------------------------------------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                         SENTENCIAS CONDICIONALES                          */
+//* ------------------------------------------------------------------------- */
 
-// //* -------------------------------- IF...ELSE ------------------------------ */
+//* ------------------------------------------------------------------------- */
+//*                                 IF...ELSE                                 */
+//* ------------------------------------------------------------------------- */
 
 // /*Ejecuta una sentencia si una condición específicada es evaluada como verdadera. 
 // Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada.
@@ -132,7 +214,13 @@
 // }
 
 
-//* --------------------------------- Switch -------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                      ESTRUCTURAS DE CONTROL - CICLOS                      */
+//* ------------------------------------------------------------------------- */
+
+//* ------------------------------------------------------------------------- */
+//*                                  SWITCH                                   */
+//* ------------------------------------------------------------------------- */
 
 /* Evalúa una expresión/variable, comparando el valor de esa expresión con una 
  instancia "case", y ejecuta declaraciones asociadas a ese "case", así como las 
@@ -155,24 +243,52 @@
 //         console.log("Abril");
 //         break;
 //      default:
-//         console.log("Mes no encontado");//Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
-
+//         console.log("Mes no encontado");
 //  }
 
- //Default -> Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+/* Break -> corta el código -> sale del ciclo y deja de ejecutarse el código
+ /*Default -> Declaraciones ejecutadas cuando ninguno de los valores coincide 
+ con el valor de la expresión */
 
- 
+ /* -------------------------------------------------------------------------- */
 
-//* --------------------- FOR - Sentencias Condicionales -------------------- */
+// const animal ="gato";
+
+// switch (animal) {
+//   case "perro":
+//     console.log("Perro");
+//     break;
+//   case "gato":
+//     console.log("Gato");
+//     break;
+//   default:
+//     console.log("Zero");
+//     break;
+// }
+
+
+//* ------------------------------------------------------------------------- */
+//*                                    FOR                                    */
+//* ------------------------------------------------------------------------- */
 
 /* Crea un bucle que consiste en 3 expresiones opcionales, encerradas en () y 
 separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle */ 
+/*
 //* for ([expresion-inicial]; [condicion]; [expresion-final])sentencia
 
+1- FOR + Intrucción inicial (expresión inicial)
+2- Condición
+3- Intrucción después de cada interacción (Expresión final) 
+*/
+
+//Imprimir números del 1 al 10
 
 // for(var i = 1; i <= 10; i++){
 //     console.log(i);
 // }
+//* i++ -> i = i + 1
+
+/* -------------------------------------------------------------------------- */
 
 // for(var i = 1; i <= 10; i += 2){
 //     console.log(i);
@@ -182,19 +298,34 @@ separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle */
 //     console.log(i);
 // }
 
+/* -------------------------- Curso Código Facilito ------------------------- */
 
-// //* Bucle For reverso
+// for(let i=1; i <= 10; i++) {
+//   console.log(i);
+//   if (i == 5) {break; }
+// }
+
+/* -------------------------------------------------------------------------- */
+// for(let i=1; i <= 10; i++) {
+//   console.log(i);
+//   if (i % 2 != 0) {continue; }
+//   console.log("Es par"); 
+// }
+// cuando se encuentra el continue, el resto de código no se evalua
+
+
+/* ---------------------------- Bucle For reverso --------------------------- */
+
 // for(var i = 10; i >= 1; i--){
 //     console.log(i);
 // }
 
+//* ------------------------------------------------------------------------- */
+//*                                   WHILE                                   */
+//* ------------------------------------------------------------------------- */
 
-
-//* --------------------------------- WHILE --------------------------------- */
-
-/* Crea un bucle que ejecuta una sentencia especificada mientras cierta 
-condición se evalúe como verdadera. Dicha condición es evaluada antes de 
-ejecutar la sentencia */ 
+/* Crea un bucle que ejecuta una sentencia mientras la condición se evalúe 
+como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia */ 
 
 /* while (condicion)
   sentencia */
@@ -209,7 +340,23 @@ ejecutar la sentencia */
 // console.log(i); // la variable va a valer 11
 
 
-// //* While Reverso
+
+/* -------------------------- Curso Código Facilito ------------------------- */
+//* Condición(1) se ejecuta antes de la interacción(2)
+// let i= 1;
+// while (i <=10) {
+//   console.log(i);
+//   i++; // tengo que poner algo que corte el ciclo sino se hace infinito
+// }
+
+/* -------------------------------------------------------------------------- */
+// while(prompt()) {
+//   console.log("Ejecución"); 
+// }
+// si se agrega texto(true), se ejecuta. 
+//Si se deja vacio (false), no se ejecuta el console.log
+
+/* ------------------------------ While Reverso ----------------------------- */
 // var i =10;
 // while (i >= 1) {
 //     console.log(i);
@@ -218,7 +365,7 @@ ejecutar la sentencia */
 // console.log(i); 
 
 
-//*Ejemplo  de que si no se cumple la condición no se ejecuta (a diferencia del do...while)
+//*Ej de que si no se cumple la condición, no se ejecuta (a diferencia del do...while)
 // var i =0;
 // while (i >= 1) {
 //     console.log(i);
@@ -228,7 +375,9 @@ ejecutar la sentencia */
 
 
 
-//* ------------------------------ DO...WHILE ------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                                DO...WHILE                                 */
+//* ------------------------------------------------------------------------- */
 
 /* La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia 
 especificada, hasta que la condición de comprobación se evalúa como falsa. 
@@ -258,10 +407,17 @@ while (condición); */
 //   console.log(i);
 
 
+/* -------------------------- Código Curso Facilito ------------------------- */
+//* Condición(2) se ejecuta después de la iteracción(1)
+// do {
+//   console.log("Ejecución");
+// } while(prompt());
 
-/* -------------------------------------------------------------------------- */
-/*                            FUNCTIONS / FUNCIONES                           */
-/* -------------------------------------------------------------------------- */
+
+
+//* ------------------------------------------------------------------------- */
+//*                           FUNCTIONS / FUNCIONES                           */
+//* ------------------------------------------------------------------------- */
 
 //* ------- Cuando llamamos la funcion directamente (variable interna) ------- */
 
@@ -365,9 +521,9 @@ pero al ser opcional, también tiene un valor por default (c=3)
 
 
 
-/* -------------------------------------------------------------------------- */
-/*                              ARRAYS - ARREGLOS                             */
-/* -------------------------------------------------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                             ARRAYS - ARREGLOS                             */
+//* ------------------------------------------------------------------------- */
                 /* Objetos de tipo lista --> indíce empieza en 0
 
 //* ------------------ Acceder/leer un elemento del Array ------------------- */
@@ -471,3 +627,4 @@ porque empieza en 0, por eso el "length" arranca desde -1 */
 //* o al final de un array
 
 /* -------------------------------------------------------------------------- */
+
