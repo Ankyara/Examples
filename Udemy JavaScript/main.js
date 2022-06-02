@@ -509,7 +509,7 @@ while (condición); */
 // console.log(msj);
  
 //* defino una variable "msj", que va a llamr a la función "mensaje" y esta función 
- //* devuelve un valor "Mensaje como devolución de la función"
+//* devuelve un valor "Mensaje como devolución de la función"
 
 
 
@@ -557,6 +557,21 @@ while (condición); */
 // let cuadrado_de_dos = cuadrado(2); //* expresión de función
 // console.log(cuadrado_de_dos);
 // console.log(cuadrado(3));
+
+/* -------------------------------------------------------------------------- */
+/*                            Parámetro - Argumento                           */
+/* -------------------------------------------------------------------------- */
+
+//parámetro --> la variable que colocamos en la definición de la funcion
+
+// function cuadrado(numero) { // function cuadrado(parámetro)
+//   return numero * numero;
+// }
+
+//argumento -> para recibir información en una function recibimos argumentos
+// tiene que se llenado cuando se llenado cuando se llama/invoca un function
+
+// cuadrado(2); // cuadrado(argumento) 
 
 
  /* -------------------------------------------------------------------------- */
@@ -654,45 +669,15 @@ pero al ser opcional, también tiene un valor por default (c=3)
 // console.log(vegetales[2]);
 
 
-/* -------------------------------------------------------------------------- */
-/*                              Propiedades Array                             */
-/* -------------------------------------------------------------------------- */
+//* ------------------------------------------------------------------------- */
+//*                             Propiedades Array                             */
+//* ------------------------------------------------------------------------- */
 
 //* -------------------------------- LENGTH --------------------------------- */
 // var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
 // var vegetales = [ "tomate", "lechuga", "zanahoria"];
 
 // console.log(nombres.length); //* cantidad de elementos que tienen una Array
-
-
-//* ---------------------------------- FOR ---------------------------------- */
-//* "for" se utiliza para recorrer Arrays
-/* si quiero recorrer por medio del índice, este siempre va a empezar desde -1
-porque empieza en 0, por eso el "length" arranca desde -1 */
-
-// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
-// var vegetales = [ "tomate", "lechuga", "zanahoria"];
-// for (var i = 0; i <= nombres.length - 1; i++){
-//     console.log(nombres[i]);
-// }
-
-//* ------------------------------ FOR...EACH ------------------------------- */
-//* otro método para recorres Arrays. La diferencia es que en "for...each", 
-//* tengo que utilizar una "function" 
-
-// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
-// var vegetales = [ "tomate", "lechuga", "zanahoria"];
-
-// vegetales.forEach(function(elemento){
-//     console.log(elemento);
-// })
-
-// vegetales.forEach(function(elemento, indice){
-//     console.log(elemento, indice);
-// })
-
-// chequear donde van los () -> tenerlo en cuenta
-
 
 //* --------------------------- Agregar elementos --------------------------- */
 
@@ -735,33 +720,84 @@ porque empieza en 0, por eso el "length" arranca desde -1 */
 //* o al final de un array
 
 
+//* ------------------------------------------------------------------------- */
+//*                           FOR - Recorrer Arrays                           */
+//* ------------------------------------------------------------------------- */
+
+//* "for" se utiliza para recorrer Arrays
+/* si quiero recorrer por medio del índice, este siempre va a empezar desde -1
+porque empieza en 0, por eso el "length" arranca desde -1 */
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+// for (var i = 0; i <= nombres.length - 1; i++){
+//     console.log(nombres[i]);
+// }
+
 /* -------------------------------------------------------------------------- */
-/*                 OBJETOS - JSON - JavaScript Objet Notation                 */
+
+// let arreglo = [1,2,3,4];
+
+// for (let i=0; i< arreglo.length; i++) {
+//   let elemento = arreglo [i];
+//   console.log(elemento);
+// }
+
+//* ------------------------------------------------------------------------- */
+//*                       FOR...EACH - Recorrer Arrays                        */
+//* ------------------------------------------------------------------------- */
+//* otro método para recorrer Arrays. La diferencia es que en "for...each", 
+//* tengo que utilizar una "function" 
+
+// var nombres = ["Romina", "Manuel", "Sasha", "Ana"];
+// var vegetales = [ "tomate", "lechuga", "zanahoria"];
+
+// vegetales.forEach(function(elemento){
+//     console.log(elemento);
+// })
+
+// vegetales.forEach(function(elemento, indice){
+//     console.log(elemento, indice);
+// })
+
+// chequear donde van los () -> tenerlo en cuenta
+
 /* -------------------------------------------------------------------------- */
+
+// let lenguajes = [ "ruby", "php", "javascriot", "python"];
+
+// lenguajes.forEach(function(lenguaje) {
+//   console.log(lenguaje);
+// });
+
+
+//* ------------------------------------------------------------------------- */
+//*                OBJETOS - JSON - JavaScript Objet Notation                 */
+//* ------------------------------------------------------------------------- */
 //! separados con comas ,
 
 // objeto = { propiedades}
 
 
-let curso = {
-  titulo: "Curso JavaScript",
-  formato: "video",
-  bloques: ["Introducción", "Funciones"],
-  inscribir: function() {
-    console.log("Incripto");
-  }
-}
+// let curso = {
+//   titulo: "Curso JavaScript",
+//   formato: "video",
+//   bloques: ["Introducción", "Funciones"],
+//   inscribir: function() {
+//     console.log("Incripto");
+//   }
+// }
 
 
-console.log(curso["titulo"]); //  lo mismo que console.log(curso.titulo);
+// console.log(curso["titulo"]); //  lo mismo que console.log(curso.titulo);
 
-curso.inscribir(); // ejecución de método -> objeto.metodo(parametros)
+// curso.inscribir(); // ejecución de método -> objeto.metodo(parametros)
 
 // los métodos de un objeto JSON se pueden reasignar
-curso.titulo = "Curso de JSON"; // nombreDelObjeto.nombreDeLaPropiedad = nuevoValor
-console.log(curso.titulo); // (objeto.propiedad)
+// curso.titulo = "Curso de JSON"; // nombreDelObjeto.nombreDeLaPropiedad = nuevoValor
+// console.log(curso.titulo); // (objeto.propiedad)
 
-curso["inscribir"] = function () { console.log("Incribir V2");}
-curso.inscribir();
+// curso["inscribir"] = function () { console.log("Incribir V2");}
+// curso.inscribir();
 
 
