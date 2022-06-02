@@ -1,6 +1,7 @@
-// //* ------------------------------------------------------------------------- */
-// //*                   Variables y tipos de datos  - Typeof                    */
-// //* ------------------------------------------------------------------------- */
+
+//* ------------------------------------------------------------------------- */
+//*                   Variables y tipos de datos  - Typeof                    */
+//* ------------------------------------------------------------------------- */
 
 // //* STRING
 // var nombre = "Romina";
@@ -29,6 +30,67 @@
 // //* NULL
 // puestoDeTrabajo = null;
 // console.log(puestoDeTrabajo);
+
+//* ------------------------------------------------------------------------- */
+//*                       Scope o alcance de variables                        */
+//* ------------------------------------------------------------------------- */
+
+/* Scope global -> variables, funciones y objetos que pueden ser usadas y
+accedidas desde cualquier parte del código. Si las modificamos, afectan su valor
+en cualquier otro lado */
+//* Variables globales -> variables declaradas fuera de una función o bloque
+
+/* Scope local --> variables, funciones y objetos solo accesibles dentro del
+bloque o función */
+//* Variables locales -> variables declaradas dentro de un función y bloque
+
+//! Importante!
+/* Cuando una variable está declarada sin let/var/const -> no importa donde
+esté declarada, automáticamente se asigna al scope global*/
+
+/* ej:
+function decirHola() {
+  nombre = "Romina"; --> ejemplo
+  console.log("Hola " + nombre);
+} 
+
+//* ------------------------------------------------------------------------- */
+//*                      Alcance de función y de bloque                       */
+//* ------------------------------------------------------------------------- */
+
+/* Alcance de función -> los recursos son accesibles desde cualquier punto 
+dentro del bloque de la función (desde que abre la { de la función hasta su cierre*/
+
+/* Alcance de bloque -> los recursos definidos dentro de un bloque de ejecución, 
+solo están disponibles dentro de ese bloque y no en toda la función (ej -> if {} */
+
+
+// function hola (nombre){
+//   if (nombre) {
+//     var saludo = "Hola " + nombre;
+//     //let saludo = "Hola " + nombre; //--> alcance de bloque
+//     // const saludo = "Hola " + nombre; //--> alcance de bloque
+//   }
+//   console.log(saludo);
+// }
+
+// hola("Romina");
+
+/* -------------------------------------------------------------------------- */
+
+// function hola (nombre){
+//   if (nombre) {
+//      let saludo = "Hola " + nombre; //--> alcance de bloque
+//     // const saludo = "Hola " + nombre; //--> alcance de bloque
+//     console.log(saludo);
+//   } 
+// }
+
+// hola("Romina");
+
+
+//* var -> alcance de función --> alacance dentro de la función más próxima
+//* let y const --> alcance de bloque --> alcance dentro del bloque más próximo
 
 
 //* ------------------------------------------------------------------------- */
@@ -407,7 +469,7 @@ while (condición); */
 //   console.log(i);
 
 
-/* -------------------------- Código Curso Facilito ------------------------- */
+/* -------------------------- Curso Código Facilito ------------------------- */
 //* Condición(2) se ejecuta después de la iteracción(1)
 // do {
 //   console.log("Ejecución");
@@ -449,6 +511,52 @@ while (condición); */
 //* defino una variable "msj", que va a llamr a la función "mensaje" y esta función 
  //* devuelve un valor "Mensaje como devolución de la función"
 
+
+
+//* ------------------------- Curso Código Facilito ------------------------- */
+
+/* Funciones-> conjunto de instrucciones -> se pueden definir de 2 formas:
+
+1- Declaración de función
+    function nombre de la función (parámetros){
+      código a ejecutar
+    }
+*/
+
+// saludar(); -> se puede "llamar/usar" antes o despues de la declaración de función
+
+// function saludar() {
+//   console.log("Hola Romina");
+// }
+
+// saludar();
+
+//* no necesitamos declarar la "función" antes de usarla, podemos hacerlo después
+
+/*
+2- Expresión de función (no inicia con la palabra function)
+   El nombre de la función es opcional(puede no estar -> función anónima)
+
+    let func = function saludar() {} //Asignamos la funcion a una variable
+*/
+
+//* func (); --> no se puede poner antes de declarar la función
+// let func = function() {};
+// func (); // "llamada" después de la expresión de función 
+
+//* no podemos usar/llamar la "función" sino la declaramos antes
+
+/* -------------------------------------------------------------------------- */
+
+// function cuadrado(numero) {
+//   return numero * numero;
+//   console.log("xxx") // no se va a ejecutar
+//   // despues del return no se sigue ejecutando código
+// }
+
+// let cuadrado_de_dos = cuadrado(2); //* expresión de función
+// console.log(cuadrado_de_dos);
+// console.log(cuadrado(3));
 
 
  /* -------------------------------------------------------------------------- */
@@ -626,5 +734,34 @@ porque empieza en 0, por eso el "length" arranca desde -1 */
 //* con "splice" puedo eliminar un elmento que no necesariamente este al inciio
 //* o al final de un array
 
+
 /* -------------------------------------------------------------------------- */
+/*                 OBJETOS - JSON - JavaScript Objet Notation                 */
+/* -------------------------------------------------------------------------- */
+//! separados con comas ,
+
+// objeto = { propiedades}
+
+
+let curso = {
+  titulo: "Curso JavaScript",
+  formato: "video",
+  bloques: ["Introducción", "Funciones"],
+  inscribir: function() {
+    console.log("Incripto");
+  }
+}
+
+
+console.log(curso["titulo"]); //  lo mismo que console.log(curso.titulo);
+
+curso.inscribir(); // ejecución de método -> objeto.metodo(parametros)
+
+// los métodos de un objeto JSON se pueden reasignar
+curso.titulo = "Curso de JSON"; // nombreDelObjeto.nombreDeLaPropiedad = nuevoValor
+console.log(curso.titulo); // (objeto.propiedad)
+
+curso["inscribir"] = function () { console.log("Incribir V2");}
+curso.inscribir();
+
 
