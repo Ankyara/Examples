@@ -10,10 +10,9 @@
 //     console.log("Hice click en Uno");
 // }
 
-// boton1.addEventListener("click", uno); 
+// boton1.addEventListener("click", uno);
 
 // boton1.addEventListener("mouseenter", () => console.log("Ingrese al boton"))
-
 
 /* funcion addEventListener -> aplica a todos los obj del DOOM (pag HTML)
 2 parámetros -> evento posible (click) / función asociada (nombre de la función)
@@ -21,7 +20,6 @@
 callback -> nomre de la funcion - recibe como parámetro una función
 
 () => console.log("Ingrese al boton")) -> es la definición de la función */
-
 
 /* -------------------------------------------------------------------------- */
 /*                          Elementos dentro del DOOM                         */
@@ -38,14 +36,12 @@ callback -> nomre de la funcion - recibe como parámetro una función
 // lis[2].style.listStyleType = "none";
 // lis[2].style.backgroundColor = "orange";
 
-
 // let arreglo = Array.from(lis); // convertir en array
 
 // arreglo.forEach(element => {
 //     element.style.color = "white";
 //     element.style.listStyleType = "none";
 // });
-
 
 // //* destacados -> HTMLCollection / seleccionar x class
 // let destacados = document.getElementsByClassName("destacado");
@@ -54,29 +50,25 @@ callback -> nomre de la funcion - recibe como parámetro una función
 // let inputs = document.querySelectorAll("input");
 
 // //* nombre -> NodeList / seleccionar x name
-// let nombre = document.getElementsByName("nombre"); 
+// let nombre = document.getElementsByName("nombre");
 
 // //* nom -> / ?
 // let nom = document.querySelector('input[name="nombre"]');
 
 // //* titulo / seleccionar x id #
-// let titulo = document.querySelector("#titulo"); 
+// let titulo = document.querySelector("#titulo");
 
 // //* cambiar el texto del titulo
 // titulo.textContent = "Cambiando el titulo";
-
 
 /* -------------------------------------------------------------------------- */
 /*                         Botón Azul - cambiar fondo                         */
 /* -------------------------------------------------------------------------- */
 
-
 // let botonAzul = document.getElementById("botonAzul");
 // let cuerpoDocumento = document.body;
 
-
 // botonAzul.addEventListener("click",() => cuerpoDocumento.style.backgroundColor = "Blue");
-
 
 /* -------------------------------------------------------------------------- */
 /*                            Crear elementos DOOM                            */
@@ -104,17 +96,15 @@ callback -> nomre de la funcion - recibe como parámetro una función
 
 // let prueba = document.getElementById("divUno");
 
-
 /* -------------------------------------------------------------------------- */
 /*                           Validación Formularios                           */
 /* -------------------------------------------------------------------------- */
-console.clear();
+// console.clear();
 
+// let nombre = document.getElementById("nombre");
+// let form = document.getElementById("formulario");
 
-let nombre = document.getElementById("nombre");
-let form = document.getElementById("formulario");
-
-let regex;
+// let regex;
 
 /* -------------------------------- Ejemplo1 -------------------------------- */
 //* no se ejecuta hasta que no se haga click/ejecute submit. Evento del formulario
@@ -155,83 +145,6 @@ let regex;
 //     }
 // } )
 
-
 // evento / e / ev
 // expresion regular -> de búsqueda -> / /
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                     ASINCRONÍA - EJECUCIÓN EN 2° PLANO                     */
-/* -------------------------------------------------------------------------- */
-
-console.clear()
-
-// console.log(1)
-// console.log(2)
-// console.log(3)
-// console.log(4)
-// console.log(5)
-// console.log(6)
-// console.log("Hola")
-
-/* -------------------------------------------------------------------------- */
-// console.log(1)
-// console.log(2)
-
-// window.setTimeout(function() {
-//     console.log("Hola")
-// }, 3000)
-
-// console.log(3)
-// console.log(4)
-// console.log(5)
-// console.log(6)
-
-
-// el "hola" se ejecuta después de 3 segundos, ejecución en segundo plano
-// el código se sigue ejecutando y después de los 3 seg, se ejecuta el "hola"
-
-/* -------------------------------------------------------------------------- */
-
-// var xhr = new XMLHttpRequest();
-
-// console.log(xhr.readyState);
-
-// xhr.open("get", "archivo.txt");
-// console.log(xhr.readyState);
-
-// xhr.send();
-// console.log(xhr.readyState);
-
-// // setTimeout(() =>{
-// //     console.log("Texto recibido: " + xhr.responseText)
-// // }, 5000);
-
-// xhr.addEventListener("readystatechange", () => {
-//     if(xhr.readyState ==4){
-//         console.log("Texto recibido: " + xhr.responseText);
-//     }
-// })
-
-//open -> que quiero hacer y donde lo busque (dirección)
-// send -> donde lo mando
-
-/* -------------------------------------------------------------------------- */
-
-var xhr = new XMLHttpRequest();
-xhr.open("get", "archivo.txt");
-
-console.log(xhr.readyState);
-
-xhr.addEventListener("readystatechange", () => {
-    console.log(xhr.readyState);
-    if(xhr.readyState ==4){
-        console.log("Texto recibido: " + xhr.responseText);
-    }
-})
-
-xhr.send();
-
-/* -------------------------------------------------------------------------- */
 
