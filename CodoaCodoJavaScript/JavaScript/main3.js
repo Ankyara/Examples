@@ -298,14 +298,17 @@ get -> ir a buscar algo
 //     console.log(error);
 // })
 
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------- FETCH --------------------------------- */
 
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json()) // lo transforma en JSON y se lo da al "then" de abajo
-  .then(json => console.log(json)) // lo imprime
+// fetch('https://jsonplaceholder.typicode.com/users')
+//   .then(response => response.json()) // lo transforma en JSON y se lo da al "then" de abajo
+//   .then(json => console.log(json)) // lo imprime
 
   /* FETCH -> es una instruccion (promesa) que cuando lo ejecutas, recien cuando
   termine el open y el get (los tiene implicitamente)...recien va a ejecutar el código
   THEN */
 
   //* Fetch hace lo mismo que el ejemplo x (anterior) - se ejecuta con los .then
+
+  /* -------------------------------------------------------------------------- */
+

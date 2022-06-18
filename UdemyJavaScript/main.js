@@ -31,18 +31,64 @@
 // puestoDeTrabajo = null;
 // console.log(puestoDeTrabajo);
 
+
+
+//* ------------------------------------------------------------------------- */
+//*                   DECLARACIÓN VS. EXPRESIÓN DE FUNCTION                   */
+//* ------------------------------------------------------------------------- */
+
+// DECLARACIÓN
+function saludar () {
+
+}
+
+//EXPRESIONES
+let f = function suma(){
+
+}
+
+/* Resumen
+1- Una función puede ser "creada" con una declaración de función o una expresión 
+de función
+2- Las declaraciones de función se mueven al ppio del alcance, por lo que pueden 
+ser usadas antes de aparecer en el código --> hoisting
+3- Las expresiones de función pueden o no tenr nombres
+4- Las expresiones de función sin nombre se las conoce como funciones anónimas
+5- Las expresiones de función pueden usar la sintaxis de flecha*/
+
+
 //* ------------------------------------------------------------------------- */
 //*                       Scope o alcance de variables                        */
 //* ------------------------------------------------------------------------- */
 
 /* Scope global -> variables, funciones y objetos que pueden ser usadas y
 accedidas desde cualquier parte del código. Si las modificamos, afectan su valor
-en cualquier otro lado */
+en cualquier otro lado --> es todo aquello que no ha sido declarado dentro de 
+un bloque o función*/
 //* Variables globales -> variables declaradas fuera de una función o bloque
 
 /* Scope local --> variables, funciones y objetos solo accesibles dentro del
-bloque o función */
+bloque o función --> elementos disponibles solo para una función*/
 //* Variables locales -> variables declaradas dentro de un función y bloque
+
+/* -------------------------------------------------------------------------- */
+//! let/const --> alacance de bloque
+//! var --> alcance function/local
+
+// function Presentacion(nombre, admin){
+//   if (admin) {
+//     //var rol = "administrador";
+//     //let rol = "Administrador";
+//   }else{
+//     rol = "Usuario";
+//   }
+//   console.log("Soy "+ nombre + "y mi rol es: "+rol);
+//   }
+
+//   Presentación ("Romina", true);
+//   Presentación ("Romina", false);
+
+/* -------------------------------------------------------------------------- */
 
 //! Importante!
 /* Cuando una variable está declarada sin let/var/const -> no importa donde
@@ -53,6 +99,20 @@ function decirHola() {
   nombre = "Romina"; --> ejemplo
   console.log("Hola " + nombre);
 } 
+
+/* -------------------------------------------------------------------------- */
+
+/*
+1- var siempre se aloja en el scope local dentro de una función o en el global
+si está fuera de una función
+2- let / const puede alojarse en el scope local, de bloque y global, según sea
+declarada en una función, en un bloque o fuera de ambos
+3- El valor para una variable con var que no ha sido asignada es undefined
+4- El valor para una variable con let que no ha sido asignada es unitialized
+5- Las variables también son alojadas al tope del scope, sin embargo, si se
+intenta usar una variable no inicializada, se recibirá error
+*/
+
 
 //* ------------------------------------------------------------------------- */
 //*                      Alcance de función y de bloque                       */
