@@ -37,15 +37,21 @@
 //*                   DECLARACIÓN VS. EXPRESIÓN DE FUNCTION                   */
 //* ------------------------------------------------------------------------- */
 
-// DECLARACIÓN
-function saludar () {
+/* DECLARACIÓN
+1- siempre empieza con la palabra reservada "function"
+2- el no,bre es obligatorio
+3- las funciones de flecha no existen*/
 
-}
+// function saludar () {
 
-//EXPRESIONES
-let f = function suma(){
+// }
 
-}
+//EXPRESIONES --> el nombre de la función es opcional ( e irrelevante) 
+
+// let f = function suma(){
+
+// }
+
 
 /* Resumen
 1- Una función puede ser "creada" con una declaración de función o una expresión 
