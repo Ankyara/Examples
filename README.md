@@ -1,2 +1,3 @@
 # Examples
-Ejemplos HTML + CSS
+Ejemplos HTML + CSS de distintos cursos, recursos de internet, etc
+
